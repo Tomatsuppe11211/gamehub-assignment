@@ -41,19 +41,19 @@
 
 
 
-        /*adding the first text*/
-        #first-text{
+        /*editing the title texts*/
+        .title-text{
             text-align: center;
             font-size:30px;
-            margin-top:100px;
         }
 
 
 
+
+        /*editing the promo games section*/
         #games{
             width:80%;
-            height:600px;
-            border: solid white;
+            height:500px;
             margin-top:100px;
             text-align: center;
             margin-left:10%;
@@ -67,9 +67,6 @@
 
 
 
-
-
-
         /*editing the swap arrows. adding a hovering mode*/
         .swap-arrow{
             height: 150px;
@@ -78,8 +75,8 @@
             background-repeat: none;
             background-size: cover;
             position: absolute;
-            margin-left:80px;
-            margin-top:150px;
+            margin-top:-110%;
+            margin-left:15%;
         }
 
         .swap-arrow:hover{
@@ -89,6 +86,41 @@
 
 
 
+        #october-games-bundle, #gaming{
+            width:80%;
+            margin-left:10%;
+            margin-top:10%;
+            padding:20px 0px;
+        }
+
+        #october-games-bundle{
+            border-radius:20px;
+            text-align: center;
+            background-color:#2B2B2B;
+            height:550px;
+        }
+
+        #october-games{
+            display: flex;
+            margin-top:5%;
+            margin-left:-7%;
+        }
+
+        #october-games div{
+            padding:0 30px;
+        }
+
+
+        #october-link{
+            font-size: 20px;
+            margin-left:30px;
+            text-decoration: none;
+            color:#959595;  
+        }
+
+        #october-link:hover{
+            color:#654FFF;
+        }
 
 
     </style>
@@ -140,7 +172,7 @@
 
 
     
-    <p id="first-text">Top searched games this week</p>
+    <p class="title-text" style="margin-top:100px;">Top searched games this week</p>
 
 
 
@@ -148,26 +180,89 @@
 
     <!--adding the promotion games-->
     <div id="games">
-        <div class="not-selected">
-            <img src="images/landing-page/black-promo.png" height="300" width="200" alt="black game" class="not-selected">
+        <div class="not-selected" style="margin-left:15%;margin-top:3%;">
+            <img src="images/landing-page/black-promo.png" height="300" width="200" alt="black game">
+            <div class="swap-arrow" style="transform:rotate(180deg);"></div>
             <p>Black</p>
         </div>
         
         <div class="selected">
-            <img src="images/landing-page/space-war-big.png" height="400" width="300" alt="space war game" id="selected">
+            <img src="images/landing-page/space-war-big.png" height="400" width="300" alt="space war game">
             <p style="font-size:25px;">Space war</p>
         </div>
         
-        <div class="not-selected">
-            <img src="images/landing-page/assassin-promo.png" height="300" width="200" alt="assassin game" class="not-selected">
+        <div class="not-selected" style="margin-left:55%;margin-top:-22%;">
+            <img src="images/landing-page/assassin-promo.png" height="300" width="200" alt="assassin game">
+            <div class="swap-arrow"></div>
             <p>Assassin</p> 
         </div>
         
     </div>
 
 
+    <img src="images/landing-page/gaming.png" id="gaming">
+
+
+    <div id="october-games-bundle">
+
+        <p class="title-text">October games bundle</p>
+
+        <div id="october-games">
+            <div style="margin-left:10%;"><a href=""><img src="images/landing-page/space-war-october-games.png"></a></div>
+            <div><a href=""><img src="images/landing-page/black-october-games.png"></a></div>
+            <div><a href=""><img src="images/landing-page/boxer-october-games.png"></a></div>
+            <div><a href=""><img src="images/landing-page/forge-legend-october-games.png"></a></div>
+            <div><a href=""><img src="images/landing-page/furious-october-games.png"></a></div>
+        </div>
+
+        <p style="font-size: 20px; width:500px; margin-left:35%;">Get a boundle containg the five most popular games from September for only 50$</p>
+
+        <button class="order-now" style="margin-top:20px; margin-left:150px;">ORDER NOW</button>
+        <a href="" id="october-link">Read more</a>
+
+
+    </div>
+
+
+
+    <footer>
+        <table>
+            <tr>
+                <th>Get help</th>
+                <th>Legal and Privacy</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td><a href="">Frequently questions</a></td>
+                <td><a href="">Privacy policy</a></td>
+                <td><a href="">About us</a></td>
+            </tr>
+            <tr>
+                <td><a href="">My orders</a></td>
+                <td><a href="">Terms of service</a></td>
+                <td><a href="">Career</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Feedback</a></td>
+                <td><a href="">Store refund policy</a></td>
+                <td><a href="">Investors</a></td>
+            </tr>
+        </table>
+
+
+        <a href="index.html" style="position: absolute; margin-left:80%;margin-top:-150px;"><img src="images/footer/desktop/gamehub-logo-footer.png"></a>
+        
+        <div class="icons">
+            <div><a href=""><img src="images/footer/desktop/facebook-logo.png"></a></div>
+            <div><a href=""><img src="images/footer/desktop/instagram-logo.png"></a></div>
+            <div><a href=""><img src="images/footer/desktop/twitter-logo.png"></a></div>
+        </div>
+
+    </footer>
+
+
 </body>
 
 
 
-</html>
+</html> 
