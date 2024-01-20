@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+
+
+    <style>
+        /*adding the space background and logo*/
+        #space-intro{
+            text-align: center;
+            background-image: url("images/landing-page/space.png");
+            height:500px;
+            font-size: 20px;
+        }
+
+        #space-intro img{
+            height:55%;
+            width:20%;
+        }
+
+        #space-intro h1{
+            width:35%;
+            margin-left:32.5%;
+            margin-top:50px;
+        }
+
+
+
+
+
+
+
+
+
+        /*adding the first text*/
+        #first-text{
+            text-align: center;
+            font-size:30px;
+            margin-top:100px;
+        }
+
+
+
+        #games{
+            width:80%;
+            height:600px;
+            border: solid white;
+            margin-top:100px;
+            text-align: center;
+            margin-left:10%;
+            font-size: 20px;
+        }
+
+        #selected, .not-selected{
+            position: absolute;
+        }
+
+
+
+
+
+
+
+        /*editing the swap arrows. adding a hovering mode*/
+        .swap-arrow{
+            height: 150px;
+            width: 150px;
+            background-image: url("images/landing-page/swap-arrow.png");
+            background-repeat: none;
+            background-size: cover;
+            position: absolute;
+            margin-left:80px;
+            margin-top:150px;
+        }
+
+        .swap-arrow:hover{
+            background-image: url("images/landing-page/swap-arrow-hover.png");
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+    <!--creating the navigationbar-->
+    <nav>
+        <a href="">Home</a>
+        <a href="">Marked</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        
+        <a href="" style="margin-left:35%;">Profile</a>
+        <a href="">Cart</a>
+    </nav>
+
+
+
+
+
+    <!--adding logo and space background-->
+    <div id="space-intro">
+        <a href="index.html"><img src="images/landing-page/logo-big.png" alt="logo"></a>
+        <h1>Go back in time within the gaming universe with old classic games</h1>
+    </div>
+
+
+
+
+    
+    <p id="first-text">Top searched games this week</p>
+
+
+
+
+
+    <!--adding the promotion games-->
+    <div id="games">
+        <div class="not-selected">
+            <img src="images/landing-page/black-promo.png" height="300" width="200" alt="black game" class="not-selected">
+            <p>Black</p>
+        </div>
+        
+        <div class="selected">
+            <img src="images/landing-page/space-war-big.png" height="400" width="300" alt="space war game" id="selected">
+            <p style="font-size:25px;">Space war</p>
+        </div>
+        
+        <div class="not-selected">
+            <img src="images/landing-page/assassin-promo.png" height="300" width="200" alt="assassin game" class="not-selected">
+            <p>Assassin</p> 
+        </div>
+        
+    </div>
+
+
+</body>
+
+
+
+</html>
