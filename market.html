@@ -27,6 +27,60 @@
         #sort input{
             border-radius:20px;
         }
+
+
+        #filter{
+            width:500px;
+            font-size:20px;
+        }
+
+
+        #filter input{margin-top:20px;}
+
+        #radio-buttons, #genres, #features{
+            margin-top:100px;
+            margin-left: 30%;
+            width:40%;
+        }
+
+
+
+
+
+
+
+
+
+        #game-showcase{
+            display:flex;
+            text-align: center;
+            font-size:18px;
+        }
+
+        #game-showcase img{
+            padding:0 20px;
+        }
+
+        .section{background-color: #202020;}
+
+        .action-button-eye{
+            background-image: url("images/market/eye-icon.png");
+            background-repeat: none;
+            background-size: cover;
+            height:60px;
+            width: 70px;
+        }
+
+        .action-button-heart{
+            background-image: url("images/market/heart-icon.png");
+            background-repeat: none;
+            background-size: cover;
+            height:60px;
+            width: 70px;
+        }
+
+        .action-button-eye, .action-button-heart{display:flex;}
+
     </style>
 
 </head>
@@ -59,19 +113,94 @@
 
 
     <div id="sort">
-        <a href="index.html"><img src="images/market/market-logo.png"></a>
+        <a href="index.html" style="margin-left:100px;"><img src="images/market/market-logo.png"></a>
         <input type="text" id="searchbar">
         <select>
-            <option selected>Playstation</option>
+            <option selected>Any console</option>
+            <option>Playstation</option>
+            <option>Nintendo</option>
+            <option>PC</option>
+            <option>X-box</option>
+            <option>Gameboy</option>
         </select>
+    </div>
+
+
+    <div id="filter">
+        <div id="radio-buttons">
+            <p style="text-align: center;">Sort by</p>
+            <input type="radio" name="sort-by-type" checked>low to high
+            <br>
+            <input type="radio" name="sort-by-type">High to low
+            <br>
+            <input type="radio" name="sort-by-type">A-Z 
+        </div>
+        
+        <div id="genres">
+            <p style="text-align: center;">Genres</p>
+            <input type="checkbox">Action
+            <br>
+            <input type="checkbox" name="genre">Shooter
+            <br>
+            <input type="checkbox" name="genre">Sports
+            <br>
+            <input type="checkbox" name="genre">Exploration
+            <br>
+            <input type="checkbox" name="genre">Horror
+            <br>
+            <input type="checkbox" name="genre">RPG
+            <br>
+            <input type="checkbox" name="genre">Racing
+            <br>
+            <input type="checkbox" name="genre">Space
+            <br>
+            <input type="checkbox" name="genre">Survival
+            <br>
+            <input type="checkbox" name="genre">Tower defence
+        </div>
+        
+        <div id="features">
+            <p style="text-align: center;">Features</p>
+            <input type="checkbox" name="feature"> Singleplayer
+            <br>
+            <input type="checkbox" name="feature"> Multiplayer
+            <br>
+            <input type="checkbox" name="feature"> Online multiplayer
+            <br>
+            <input type="checkbox" name="feature"> Competitive
+            <br>
+            <input type="checkbox" name="feature"> Co-op
+            <br>
+            <input type="checkbox" name="feature"> Cross platform
+            <br>
+        </div>
+
     </div>
 
 
 
 
 
+    <div id="game-showcase">
+        
+        <div class="game-row">
 
+            <div class="section">
+                
+                <img src="images/market/assassin-market.png">
+                <p style="font-weight: bold;">Assassin</p>
+                <p>Seller: Kellerman29</p>
+                <p><i>Price: 12$</i></p>
+                <div class="actions">
+                    <div class="action-button-eye"></div>
+                    <div class="action-button-heart"></div>
+                </div>
+            </div>
 
+            <div class="section"></div>
+            <div class="section"></div>
+        </div>
+    </div>
 
 
 
