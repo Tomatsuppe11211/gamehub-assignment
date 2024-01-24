@@ -61,25 +61,40 @@
             padding:0 20px;
         }
 
-        .section{background-color: #202020;}
-
-        .action-button-eye{
-            background-image: url("images/market/eye-icon.png");
-            background-repeat: none;
-            background-size: cover;
-            height:60px;
-            width: 70px;
+        .game-row{
+            border: solid white;
+            height:500px;
+            width:60%;
+            margin-left:30%;
+            margin-top:-1100px;
+            position: absolute;
         }
 
-        .action-button-heart{
-            background-image: url("images/market/heart-icon.png");
-            background-repeat: none;
-            background-size: cover;
-            height:60px;
-            width: 70px;
+        .section{
+            background-color: #202020;
+            width:20%;
+            
         }
 
-        .action-button-eye, .action-button-heart{display:flex;}
+        
+        
+
+        .action-button-eye, .action-button-heart{
+            background-repeat: no-repeat;
+            background-size: cover;
+            display:inline-block;
+            height:35px;
+            width: 35px;
+            margin:0 10px;
+        }
+
+
+        .action-button-eye{background-image: url("images/market/eye-icon.png");}
+        .action-button-eye:hover{background-image: url("images/market/eye-icon-hover.png");}
+
+        .action-button-heart{background-image: url("images/market/heart-icon.png");}
+        .action-button-heart:hover{background-image: url("images/market/heart-icon-hover.png");}
+
 
     </style>
 
@@ -113,7 +128,7 @@
 
 
     <div id="sort">
-        <a href="index.html" style="margin-left:100px;"><img src="images/market/market-logo.png"></a>
+        <a href="index.html" style="margin-left:100px; margin-top:50px;"><img src="images/market/market-logo.png"></a>
         <input type="text" id="searchbar">
         <select>
             <option selected>Any console</option>
@@ -186,7 +201,6 @@
         <div class="game-row">
 
             <div class="section">
-                
                 <img src="images/market/assassin-market.png">
                 <p style="font-weight: bold;">Assassin</p>
                 <p>Seller: Kellerman29</p>
