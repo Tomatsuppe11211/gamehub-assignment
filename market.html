@@ -19,7 +19,7 @@
         #sort input, select{
             font-size:20px;
             padding:10px 50px;
-            margin-left:300px;
+            margin-left:200px;
             background-color: #202020;
             color:white;
         }
@@ -28,72 +28,32 @@
             border-radius:20px;
         }
 
+        #sort, #games{
+            border: solid white;
+            width:60%;
+            margin-left:30%;
+            margin-top:100px;
+        }
+
 
         #filter{
             width:500px;
             font-size:20px;
+            border: solid white;
+            position: absolute;
         }
 
 
         #filter input{margin-top:20px;}
 
         #radio-buttons, #genres, #features{
-            margin-top:100px;
+            margin-top:70px;
             margin-left: 30%;
             width:40%;
         }
 
 
-
-
-
-
-
-
-
-        #game-showcase{
-            display:flex;
-            text-align: center;
-            font-size:18px;
-        }
-
-        #game-showcase img{
-            padding:0 20px;
-        }
-
-        .game-row{
-            border: solid white;
-            height:500px;
-            width:60%;
-            margin-left:30%;
-            margin-top:-1100px;
-            position: absolute;
-        }
-
-        .section{
-            background-color: #202020;
-            width:20%;
-            
-        }
-
-        
-        
-
-        .action-button-eye, .action-button-heart{
-            background-repeat: no-repeat;
-            background-size: cover;
-            display:inline-block;
-            height:35px;
-            width: 35px;
-            margin:0 10px;
-        }
-
-
-        .action-button-eye{background-image: url("images/market/eye-icon.png");}
-        .action-button-eye:hover{background-image: url("images/market/eye-icon-hover.png");}
-
-        .action-button-heart{background-image: url("images/market/heart-icon.png");}
-        .action-button-heart:hover{background-image: url("images/market/heart-icon-hover.png");}
+        #games{height:500px;}
 
 
     </style>
@@ -128,7 +88,6 @@
 
 
     <div id="sort">
-        <a href="index.html" style="margin-left:100px; margin-top:50px;"><img src="images/market/market-logo.png"></a>
         <input type="text" id="searchbar">
         <select>
             <option selected>Any console</option>
@@ -142,6 +101,9 @@
 
 
     <div id="filter">
+
+        <a href="index.html" style="margin-left:100px; margin-top:50px;"><img src="images/market/market-logo.png"></a>
+
         <div id="radio-buttons">
             <p style="text-align: center;">Sort by</p>
             <input type="radio" name="sort-by-type" checked>low to high
@@ -196,26 +158,11 @@
 
 
 
-    <div id="game-showcase">
-        
-        <div class="game-row">
+    <div id="games"></div>
 
-            <div class="section">
-                <img src="images/market/assassin-market.png">
-                <p style="font-weight: bold;">Assassin</p>
-                <p>Seller: Kellerman29</p>
-                <p><i>Price: 12$</i></p>
-                <div class="actions">
-                    <div class="action-button-eye"></div>
-                    <div class="action-button-heart"></div>
-                </div>
-            </div>
 
-            <div class="section"></div>
-            <div class="section"></div>
-        </div>
-    </div>
 
+    
 
 
 
