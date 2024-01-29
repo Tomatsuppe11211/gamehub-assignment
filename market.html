@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gamehub.com/market</title>
     <link rel="stylesheet" href="css/style.css">
 
     <style>
@@ -26,21 +26,27 @@
 
         #sort input{
             border-radius:20px;
+            border: solid grey;
         }
 
-        #sort, #games{
-            border: solid white;
+        #sort, .games-row{
             width:60%;
             margin-left:30%;
             margin-top:100px;
+        }
+
+        #search-icon{
+            position: absolute;
+            margin-left:-340px;
+            margin-top:10px;
         }
 
 
         #filter{
             width:500px;
             font-size:20px;
-            border: solid white;
             position: absolute;
+            margin-top:-50px;
         }
 
 
@@ -53,8 +59,52 @@
         }
 
 
-        #games{height:500px;}
+        .games-row{height:400px;}
 
+        .game , .first-game{
+            width: 20%;
+            text-align: center;
+            background-color:#202020;
+            font-size:20px;
+            height:100%;
+            display: inline-block;
+        }
+
+        .game{margin-left:18%;}
+
+
+        .action div{display: inline-block;margin-top:15px;}
+
+        .heart , .eye{
+            height:50px;
+            width:50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .eye{background-image: url("images/market/eye-icon.png"); }
+        .eye:hover{background-image: url("images/market/eye-icon-hover.png");}
+        .heart{background-image: url("images/market/heart-icon.png"); margin-left:20px;}
+        .heart:hover{background-image: url("images/market/heart-icon-hover.png");}
+
+
+        button{
+            font-size: 20px;
+            border: solid grey;
+            color:grey;
+            background-color: #202020;
+            margin-top:100px;
+            text-align: center;
+            width:10%;
+            height:50px;
+            margin-left:55%;
+        }
+
+        button:hover{
+            color:#FFFFFF;
+            background-color:#000000;
+        }
 
     </style>
 
@@ -73,7 +123,7 @@
      <nav>
         <a href="index.html">Home</a>
         <a href="market.html" style="color:#654FFF">Marked</a>
-        <a href="">About</a>
+        <a href="about.html">About</a>
         <a href="">Contact</a>
         
         <a href="" style="margin-left:35%;">Profile</a>
@@ -81,14 +131,36 @@
     </nav>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--adding image of storm troopers-->
     <div id="trooper">
         <h1 style="text-align: center; font-size: 50px;">Gamehub Market</h1>
     </div>
 
 
 
+
+
+
+
+
+
+    <!--adding seacrhbar and option bar-->
     <div id="sort">
-        <input type="text" id="searchbar">
+        <input type="text" id="searchbar" placeholder="search for games">
+        <img src="images/market/Search-icon.svg" height="30" width="30" id="search-icon">
+
         <select>
             <option selected>Any console</option>
             <option>Playstation</option>
@@ -100,9 +172,18 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+    <!--adding sorting system-->
     <div id="filter">
 
-        <a href="index.html" style="margin-left:100px; margin-top:50px;"><img src="images/market/market-logo.png"></a>
+        <a href="index.html" style="margin-left:100px; margin-top:50px;"><img src="images/market/market-logo.png" alt="Gamehub logo"></a>
 
         <div id="radio-buttons">
             <p style="text-align: center;">Sort by</p>
@@ -158,10 +239,99 @@
 
 
 
-    <div id="games"></div>
 
 
 
+
+
+    <!--Adding games-->
+    <div class="games-row">
+
+        <div class="first-game">
+            <img src="images/market/assassin-market.png" alt="Assassin cover">
+            <h3>Assassin</h3>
+            <p>Seller: Kellerman29</p>
+            <p>Price: 12$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/assassin-market.png" alt="Assassin cover">
+            <h3>Assassin</h3>
+            <p>Seller: CR7_Fan</p>
+            <p>Price: 12$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/space-war-market.png" alt="Space war cover">
+            <h3>Space war</h3>
+            <p>Seller: Soldier1995</p>
+            <p>Price: 12$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="games-row">
+
+        <div class="first-game">
+            <img src="images/market/super-duper-market.png" alt="Super duper cover">
+            <h3>Super duper</h3>
+            <p>Seller: CrazyFrog</p>
+            <p>Price: 12$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/black-market.png" alt="Black cover">
+            <h3>Assassin</h3>
+            <p>Seller: Hitman007</p>
+            <p>Price: 12$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/assassin-market.png" alt="Assassin cover">
+            <h3>Assassin</h3>
+            <p>Seller: Ezio-Best</p>
+            <p>Price: 13$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+    </div>
     
 
 
@@ -169,6 +339,45 @@
 
 
 
+    <div class="games-row">
+
+        <div class="first-game">
+            <img src="images/market/space-war-market.png" alt="Space war cover">
+            <h3>Space war</h3>
+            <p>Seller: Kellerman29</p>
+            <p>Price: 12$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/super-duper-market.png" alt="Super duper cover">
+            <h3>Super duper</h3>
+            <p>Seller: PIKMIN_2000</p>
+            <p>Price: 13$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/boxer-market.png" alt="boxer cover">
+            <h3>Boxer</h3>
+            <p>Seller: TysonFan12</p>
+            <p>Price: 14$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+    </div>
 
 
 
@@ -176,8 +385,59 @@
 
 
 
+    <div class="games-row">
+
+        <div class="first-game">
+            <img src="images/market/cyberpunk-market.png" alt="Cyberpunk cover">
+            <h3>Cyberpunk</h3>
+            <p>Seller: Kellerman29</p>
+            <p>Price: 15$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
 
 
+        <div class="game">
+            <img src="images/market/assassin-market.png" alt="Assassin cover">
+            <h3>Assassin</h3>
+            <p>Seller: Sneaker</p>
+            <p>Price: 15$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+        <div class="game">
+            <img src="images/market/cyberpunk-market.png" alt="Cyberpunk cover">
+            <h3>Cyberpunk</h3>
+            <p>Seller: Sneaker</p>
+            <p>Price: 15$</p>
+                <div class="action">
+                    <div class="eye"></div>
+                    <div class="heart"></div>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--Adding a loading button-->
+    <button>Load more</button>
+
+
+
+
+
+
+
+    <!--adding a footer-->
     <footer>
         <table>
             <tr>
