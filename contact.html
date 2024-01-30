@@ -10,22 +10,32 @@
         #costumer-service{
             margin-left:10%;
             margin-top:100px;
+            height:450px;
         }
 
 
         #chat-bubble{
-            position: absolute;
-            margin-left:-2%;
+            margin-left:15%;
             margin-top:-2%;
         }
 
         #bubble-text{
-            position: absolute;
             margin-left:23%;
-            margin-top:-22%;
+            margin-top:-1%;
             width:10%;
         }
 
+
+        #contact-info{
+            width:25%;
+            margin-left: 20%;
+            margin-top:250px;
+        }
+
+
+        #chat-bubble , #bubble-text , #contact-info{
+            position: absolute;
+        }
 
 
     </style>
@@ -57,20 +67,38 @@
 
 
 
+
+    <!--adding logo-->
     <a href="index.html"><img src="images/contact/logo-contact.png" style="margin-left:10%; margin-top:50px;"></a>
 
 
+
+
+
+
+    <!--adding image with some information-->
     <div id="costumer-service">
-        <img src="images/contact/costumer-service.png">
+        <img src="images/contact/costumer-service.png" style="position: absolute;">
         <img src="images/contact/chat-bubble.png" id="chat-bubble">
         <div id="bubble-text">
             <h2>Need help?</h2>
-            <p style="font-size:20px;">Let us know in the chat or send us a mail.</p>
+            <p>Let us know in the chat or send us a mail.</p>
         </div>
+
+        <div id="contact-info">
+           <p>Email: CostumerService@gamehub.com</p>
+            <br>
+            <p>Phone: +47 28 36 19 24</p> 
+        </div>
+        
     </div>
 
 
 
-    
+
+
+    <div id="chat-bot">
+
+    </div>
 </body>
 </html>
